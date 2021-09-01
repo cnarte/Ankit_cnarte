@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Ankit&#39;s Data Science journey</title>
+    <link>https://cnarte.github.io/Ankit_cnarte/tags/</link>
+    <description>Recent content in Tags on Ankit&#39;s Data Science journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cnarte.github.io/Ankit_cnarte/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gans</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/gans/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/gans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Basic</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/basic/</link>
+      <pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/basic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/flutter/</link>
+      <pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CNN</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/cnn/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/cnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/computer-vision/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LSTM</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/lstm/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/lstm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
