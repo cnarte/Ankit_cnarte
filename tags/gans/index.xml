@@ -5,13 +5,14 @@
     <link>https://cnarte.github.io/Ankit_cnarte/tags/gans/</link>
     <description>Recent content in Gans on Ankit&#39;s Data Science journey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cnarte.github.io/Ankit_cnarte/tags/gans/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cnarte.github.io/Ankit_cnarte/tags/gans/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Education Outside Grid</title>
-      <link>https://cnarte.github.io/Ankit_cnarte/post/chapter-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://cnarte.github.io/Ankit_cnarte/post/project-1/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cnarte.github.io/Ankit_cnarte/post/chapter-1/</guid>
+      <guid>https://cnarte.github.io/Ankit_cnarte/post/project-1/</guid>
       <description>We all face problems with online meetings and children with poor or no internet get the worst of it due to screen lag. So we made a solution where only from voice channels and provided class material, real time inference can happen at student end without the internet. This was achieved using Dalle and clip networks.</description>
     </item>
     
