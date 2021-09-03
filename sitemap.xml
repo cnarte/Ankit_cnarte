@@ -12,17 +12,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://cnarte.github.io/Ankit_cnarte/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://cnarte.github.io/Ankit_cnarte/post/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://cnarte.github.io/Ankit_cnarte/tags/</loc>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -42,6 +42,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/tags/bert/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/post/project-4/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://cnarte.github.io/Ankit_cnarte/tags/cnn/</loc>
     <lastmod>2021-02-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -57,16 +67,26 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/tags/real-immplementation/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/tags/transformer/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://cnarte.github.io/Ankit_cnarte/post/project-3/</loc>
     <lastmod>2021-02-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://cnarte.github.io/Ankit_cnarte/about/</loc>
+    <loc>https://cnarte.github.io/Ankit_cnarte/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://cnarte.github.io/Ankit_cnarte/categories/</loc>
+    <loc>https://cnarte.github.io/Ankit_cnarte/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

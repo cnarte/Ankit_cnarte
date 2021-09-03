@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ankit&#39;s Data Science journey</title>
+    <title>Tags on Ankit Kumar</title>
     <link>https://cnarte.github.io/Ankit_cnarte/tags/</link>
-    <description>Recent content in Tags on Ankit&#39;s Data Science journey</description>
+    <description>Recent content in Tags on Ankit Kumar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cnarte.github.io/Ankit_cnarte/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Bert</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/bert/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/bert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CNN</title>
       <link>https://cnarte.github.io/Ankit_cnarte/tags/cnn/</link>
       <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
@@ -58,6 +67,24 @@
       <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cnarte.github.io/Ankit_cnarte/tags/lstm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Real-Immplementation</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/real-immplementation/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/real-immplementation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transformer</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/tags/transformer/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/tags/transformer/</guid>
       <description></description>
     </item>
     

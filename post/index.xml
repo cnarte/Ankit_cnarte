@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects And Blogs on Ankit&#39;s Data Science journey</title>
+    <title>Projects And Blogs on Ankit Kumar</title>
     <link>https://cnarte.github.io/Ankit_cnarte/post/</link>
-    <description>Recent content in Projects And Blogs on Ankit&#39;s Data Science journey</description>
+    <description>Recent content in Projects And Blogs on Ankit Kumar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cnarte.github.io/Ankit_cnarte/post/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cnarte.github.io/Ankit_cnarte/post/project-1/</guid>
-      <description>We all face problems with online meetings and children with poor or no internet get the worst of it due to screen lag. So we made a solution where only from voice channels and provided class material, real time inference can happen at student end without the internet. This was achieved using Dalle and clip networks.</description>
+      <description>{{figure src = &amp;ldquo;static/images/education_outside_grid.jpg&amp;rdquo;}} We all face problems with online meetings and children with poor or no internet get the worst of it due to screen lag. So we made a solution where only from voice channels and provided class material, real time inference can happen at student end without the internet. This was achieved using Dalle and clip networks.</description>
     </item>
     
     <item>
@@ -24,6 +24,15 @@
       <guid>https://cnarte.github.io/Ankit_cnarte/post/project-2/</guid>
       <description>This project is a starting point for a Flutter application. Where the basics of ui design logic and state-handling in app-dev lifecylce.
  This is the first iteration of this app Currently the app resets whenever X or O wins. Next iteration winner prompt and bot playing will be included.   </description>
+    </item>
+    
+    <item>
+      <title>Bert Implimentaion in real machinehack dataset</title>
+      <link>https://cnarte.github.io/Ankit_cnarte/post/project-4/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnarte.github.io/Ankit_cnarte/post/project-4/</guid>
+      <description>This is an explanation on how to implement bert on different devices like CPU and GPU. To check and install for cuda compatible devices, I think its documentation is far more appropriate. Many other places where Bert models can be deployed majorly depends on the type of data that we choose. Like if we want to deploy it in an app or just as a part of biger model architecture for recomendation system or speech generation models.</description>
     </item>
     
     <item>
