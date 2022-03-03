@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/</loc>
+    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/tags/android/</loc>
+    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/tags/machine-learning/</loc>
+    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/post/</loc>
+    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/post/project-5/</loc>
+    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/tags/</loc>
+    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://cnarte.github.io/Ankit_cnarte/tags/tf-lite/</loc>
+    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://cnarte.github.io/Ankit_cnarte/tags/education/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -18,21 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://cnarte.github.io/Ankit_cnarte/tags/gans/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://cnarte.github.io/Ankit_cnarte/post/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://cnarte.github.io/Ankit_cnarte/tags/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://cnarte.github.io/Ankit_cnarte/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -96,11 +116,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://cnarte.github.io/Ankit_cnarte/about/</loc>
+    <loc>https://cnarte.github.io/Ankit_cnarte/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://cnarte.github.io/Ankit_cnarte/contact/</loc>
+    <loc>https://cnarte.github.io/Ankit_cnarte/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
