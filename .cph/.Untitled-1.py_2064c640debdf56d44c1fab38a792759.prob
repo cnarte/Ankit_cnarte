@@ -1,1 +1,0 @@
-{"name":"Local: Untitled-1","url":"/home/cnarte/portfolio/Ankit_cnarte/Untitled-1.py","tests":[{"id":1630756308765,"input":"3\njim likes mary\nkate likes tom\ntom does not like jim\n2\njim tom\nlikes","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/cnarte/portfolio/Ankit_cnarte/Untitled-1.py","group":"local","local":true}
