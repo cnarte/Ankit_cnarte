@@ -114,6 +114,7 @@
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#blog" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Blog</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
         <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
@@ -208,7 +209,7 @@
     </section><!-- End Facts Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <!-- <section id="skills" class="skills section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -246,7 +247,95 @@
         </div>
 
       </div>
-    </section><!-- End Skills Section -->
+    </section> -->
+    <!-- End Skills Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Blog Posts</h2>
+          <p>Latest articles and insights from my Substack</p>
+        </div>
+
+        <div class="blog-scroll-container">
+          <div class="blog-scroll-wrapper" id="blog-posts-container">
+            <div class="text-center" style="min-width: 300px;">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <p class="mt-2">Loading blog posts...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://cnarte.substack.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View All Posts on Substack</a>
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+    <style>
+      .blog-scroll-container {
+        position: relative;
+        margin: 0 -15px;
+        padding: 20px 0;
+      }
+      
+      .blog-scroll-wrapper {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        padding: 0 15px;
+        gap: 20px;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      .blog-scroll-wrapper::-webkit-scrollbar {
+        height: 8px;
+      }
+      
+      .blog-scroll-wrapper::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      
+      .blog-scroll-wrapper::-webkit-scrollbar-thumb {
+        background: #149ddd;
+        border-radius: 10px;
+      }
+      
+      .blog-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+        background: #0d7ab8;
+      }
+      
+      .blog-card {
+        flex: 0 0 350px;
+        min-width: 350px;
+        max-width: 350px;
+      }
+      
+      @media (max-width: 768px) {
+        .blog-card {
+          flex: 0 0 300px;
+          min-width: 300px;
+          max-width: 300px;
+        }
+      }
+      
+      .blog-card .card {
+        height: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .blog-card .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      }
+    </style>
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -585,6 +674,123 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Blog RSS Feed Script -->
+  <script>
+    // Hardcoded blog posts from cnarte.substack.com (fallback if RSS fails)
+    const FALLBACK_POSTS = [
+      {
+        title: "Wells Fargo's Fargo AI Assistant: A Large-Scale AI Architecture",
+        description: "Introduction - Financial services have traditionally been cautious with emerging technologies, especially when customer data is involved. That's why Wells Fargo's remarkable success with their Fargo AI assistant caught the attention of the tech and finance communities alike...",
+        link: "https://cnarte.substack.com/p/wells-fargos-fargo-ai-assistant-a",
+        pubDate: "2025-05-04T06:31:02.000Z"
+      },
+      {
+        title: "Making a Natural Language based LLM Recommendation System",
+        description: "Making a use case of Anime recommender system using llm and Langchain/LlamaIndex. Using graph database and normal Json query...",
+        link: "https://cnarte.substack.com/p/making-a-natural-language-based-llm",
+        pubDate: "2024-02-18T14:05:16.000Z"
+      },
+      {
+        title: "Coming soon",
+        description: "This is cnarte's Substack - stay tuned for more content!",
+        link: "https://cnarte.substack.com/p/coming-soon",
+        pubDate: "2024-02-18T12:20:28.000Z"
+      }
+    ];
+
+    // Fetch Substack RSS feed and display blog posts
+    async function loadBlogPosts() {
+      const container = document.getElementById('blog-posts-container');
+      
+      console.log('🔍 Starting blog post fetch...');
+      
+      // Try RSS2JSON API
+      try {
+        const feedURL = 'https://cnarte.substack.com/feed';
+        const rss2jsonAPI = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedURL)}`;
+        
+        console.log('📡 Calling RSS2JSON API:', rss2jsonAPI);
+        
+        const response = await fetch(rss2jsonAPI);
+        const data = await response.json();
+        
+        console.log('📊 RSS2JSON Response:', data);
+        
+        if (data.status === 'ok' && data.items && data.items.length > 0) {
+          console.log(`✅ Success! Found ${data.items.length} posts from API`);
+          renderPosts(data.items);
+          return;
+        } else {
+          console.warn('⚠️ API returned no items, using fallback data');
+          throw new Error('No items from API');
+        }
+      } catch (error) {
+        console.error('❌ RSS2JSON API failed:', error);
+        console.log('📦 Using fallback hardcoded posts');
+        renderPosts(FALLBACK_POSTS);
+      }
+    }
+    
+    function renderPosts(posts) {
+      const container = document.getElementById('blog-posts-container');
+      container.innerHTML = '';
+      
+      posts.forEach((post, index) => {
+        console.log(`📝 Rendering post ${index + 1}:`, post.title);
+        
+        // Extract excerpt from description (remove HTML tags)
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = post.description || post.content || '';
+        let excerpt = (tempDiv.textContent || 'No preview available').trim();
+        excerpt = excerpt.substring(0, 150) + (excerpt.length > 150 ? '...' : '');
+        
+        // Format date
+        const postDate = new Date(post.pubDate || post.published);
+        const formattedDate = postDate.toLocaleDateString('en-US', { 
+          year: 'numeric', 
+          month: 'short', 
+          day: 'numeric' 
+        });
+        
+        const blogCard = `
+          <div class="blog-card" data-aos="fade-right" data-aos-delay="${index * 100}">
+            <div class="card shadow-sm" style="border: 1px solid #eee;">
+              <div class="card-body d-flex flex-column" style="min-height: 300px;">
+                <h5 class="card-title" style="color: #173b6c; font-weight: 700; font-size: 18px; line-height: 1.4; margin-bottom: 15px;">
+                  ${post.title}
+                </h5>
+                <p class="card-text text-muted" style="font-size: 14px; flex-grow: 1; line-height: 1.6;">
+                  ${excerpt}
+                </p>
+                <div class="mt-auto">
+                  <p class="text-muted mb-2" style="font-size: 12px;">
+                    <i class="bi bi-calendar"></i> ${formattedDate}
+                  </p>
+                  <a href="${post.link || post.url}" target="_blank" rel="noopener noreferrer" 
+                     class="btn btn-sm" style="background: #149ddd; color: #fff; border: none;">
+                    Read More <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        container.innerHTML += blogCard;
+      });
+      
+      console.log('✅ All blog posts rendered successfully!');
+    }
+    
+    // Load blog posts when page loads
+    console.log('🚀 Initializing blog post loader...');
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadBlogPosts);
+    } else {
+      loadBlogPosts();
+    }
+  </script>
 
 </body>
 
