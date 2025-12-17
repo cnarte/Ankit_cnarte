@@ -335,7 +335,145 @@
         transform: translateY(-5px);
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
       }
+      
+      /* Blog Post Modal */
+      .blog-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.8);
+        animation: fadeIn 0.3s;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      .blog-modal-content {
+        background-color: #fff;
+        margin: 2% auto;
+        padding: 0;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 900px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        animation: slideDown 0.3s;
+      }
+      
+      @keyframes slideDown {
+        from { transform: translateY(-50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      
+      .blog-modal-header {
+        background: linear-gradient(135deg, #173b6c 0%, #149ddd 100%);
+        color: white;
+        padding: 20px 30px;
+        border-radius: 8px 8px 0 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .blog-modal-header h2 {
+        margin: 0;
+        font-size: 24px;
+        flex: 1;
+      }
+      
+      .blog-modal-close {
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        margin-left: 20px;
+        transition: transform 0.2s;
+      }
+      
+      .blog-modal-close:hover {
+        transform: scale(1.2);
+      }
+      
+      .blog-modal-body {
+        padding: 30px;
+        color: #333;
+        line-height: 1.8;
+      }
+      
+      .blog-modal-body img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+      
+      .blog-modal-body a {
+        color: #149ddd;
+        text-decoration: none;
+      }
+      
+      .blog-modal-body a:hover {
+        text-decoration: underline;
+      }
+      
+      .blog-modal-footer {
+        padding: 20px 30px;
+        background: #f8f9fa;
+        border-top: 1px solid #e0e0e0;
+        border-radius: 0 0 8px 8px;
+        text-align: center;
+      }
+      
+      .blog-modal-footer a {
+        color: #149ddd;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      
+      @media (max-width: 768px) {
+        .blog-modal-content {
+          width: 95%;
+          margin: 5% auto;
+        }
+        
+        .blog-modal-header h2 {
+          font-size: 18px;
+        }
+        
+        .blog-modal-body {
+          padding: 20px;
+        }
+      }
     </style>
+  </section><!-- End Blog Section -->
+  
+  <!-- Blog Post Modal -->
+  <div id="blogModal" class="blog-modal">
+    <div class="blog-modal-content">
+      <div class="blog-modal-header">
+        <h2 id="modalTitle"></h2>
+        <button class="blog-modal-close" onclick="closeBlogModal()">&times;</button>
+      </div>
+      <div class="blog-modal-body" id="modalBody"></div>
+      <div class="blog-modal-footer">
+        <a id="modalSubstackLink" href="#" target="_blank" rel="noopener noreferrer">Read on Substack →</a>
+      </div>
+    </div>
+  </div>
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -683,21 +821,27 @@
         title: "Wells Fargo's Fargo AI Assistant: A Large-Scale AI Architecture",
         description: "Introduction - Financial services have traditionally been cautious with emerging technologies, especially when customer data is involved. That's why Wells Fargo's remarkable success with their Fargo AI assistant caught the attention of the tech and finance communities alike...",
         link: "https://cnarte.substack.com/p/wells-fargos-fargo-ai-assistant-a",
-        pubDate: "2025-05-04T06:31:02.000Z"
+        pubDate: "2025-05-04T06:31:02.000Z",
+        content: "" // Will be fetched from Substack if needed
       },
       {
         title: "Making a Natural Language based LLM Recommendation System",
         description: "Making a use case of Anime recommender system using llm and Langchain/LlamaIndex. Using graph database and normal Json query...",
         link: "https://cnarte.substack.com/p/making-a-natural-language-based-llm",
-        pubDate: "2024-02-18T14:05:16.000Z"
+        pubDate: "2024-02-18T14:05:16.000Z",
+        content: "" // Will be fetched from Substack if needed
       },
       {
         title: "Coming soon",
         description: "This is cnarte's Substack - stay tuned for more content!",
         link: "https://cnarte.substack.com/p/coming-soon",
-        pubDate: "2024-02-18T12:20:28.000Z"
+        pubDate: "2024-02-18T12:20:28.000Z",
+        content: "<p>This is cnarte's Substack - stay tuned for more content!</p>"
       }
     ];
+    
+    // Store all posts with their full content
+    let allPosts = [];
 
     // Fetch Substack RSS feed and display blog posts
     async function loadBlogPosts() {
@@ -719,7 +863,15 @@
         
         if (data.status === 'ok' && data.items && data.items.length > 0) {
           console.log(`✅ Success! Found ${data.items.length} posts from API`);
-          renderPosts(data.items);
+          // Store posts with full content
+          allPosts = data.items.map(item => ({
+            title: item.title || 'Untitled',
+            description: item.description || item.content?.substring(0, 200) || '',
+            link: item.link || item.guid || '#',
+            pubDate: item.pubDate,
+            content: item.content || item.description || ''
+          }));
+          renderPosts(allPosts);
           return;
         } else {
           console.warn('⚠️ API returned no items, using fallback data');
@@ -728,6 +880,7 @@
       } catch (error) {
         console.error('❌ RSS2JSON API failed:', error);
         console.log('📦 Using fallback hardcoded posts');
+        allPosts = FALLBACK_POSTS;
         renderPosts(FALLBACK_POSTS);
       }
     }
@@ -767,9 +920,13 @@
                   <p class="text-muted mb-2" style="font-size: 12px;">
                     <i class="bi bi-calendar"></i> ${formattedDate}
                   </p>
+                  <button onclick="openBlogModal(${index})" 
+                     class="btn btn-sm me-2" style="background: #149ddd; color: #fff; border: none;">
+                    Read on Site <i class="bi bi-eye"></i>
+                  </button>
                   <a href="${post.link || post.url}" target="_blank" rel="noopener noreferrer" 
-                     class="btn btn-sm" style="background: #149ddd; color: #fff; border: none;">
-                    Read More <i class="bi bi-arrow-right"></i>
+                     class="btn btn-sm btn-outline-primary">
+                    Open Substack <i class="bi bi-box-arrow-up-right"></i>
                   </a>
                 </div>
               </div>
@@ -780,8 +937,58 @@
         container.innerHTML += blogCard;
       });
       
-      console.log('✅ All blog posts rendered successfully!');
+      console.log(`✅ Rendered ${posts.length} blog posts`);
     }
+    
+    // Open blog post in modal
+    function openBlogModal(postIndex) {
+      const post = allPosts[postIndex];
+      if (!post) return;
+      
+      const modal = document.getElementById('blogModal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalBody = document.getElementById('modalBody');
+      const modalLink = document.getElementById('modalSubstackLink');
+      
+      modalTitle.textContent = post.title;
+      modalLink.href = post.link || post.url;
+      
+      // If content is available, show it
+      if (post.content && post.content.trim()) {
+        modalBody.innerHTML = post.content;
+      } else {
+        // Fallback: show description and link to Substack
+        modalBody.innerHTML = `
+          <p>${post.description || 'No content available.'}</p>
+          <p class="mt-3"><a href="${post.link}" target="_blank" rel="noopener noreferrer">Continue reading on Substack →</a></p>
+        `;
+      }
+      
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+    
+    // Close blog modal
+    function closeBlogModal() {
+      const modal = document.getElementById('blogModal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Restore scrolling
+    }
+    
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('blogModal');
+      if (event.target === modal) {
+        closeBlogModal();
+      }
+    }
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeBlogModal();
+      }
+    });
     
     // Load blog posts when page loads
     console.log('🚀 Initializing blog post loader...');
