@@ -1,0 +1,151 @@
+# Ankit Kumar - AI Developer & ML Engineer
+
+## About
+AI Developer at Commvault specializing in LLM agents, RAG pipelines, and MLOps. Based in Pune, India with 3+ years of professional experience building scalable AI systems that drive real business impact.
+
+## Contact
+- Email: ankitkrchy.54@gmail.com
+- Phone: +91 9939086064
+- LinkedIn: https://www.linkedin.com/in/cnarte/
+- GitHub: https://github.com/cnarte
+- Website: https://ankit.cnarte.com
+
+## Core Expertise
+
+### AI/ML Specializations
+- Natural Language Processing (NLP)
+- Large Language Models (LLMs)
+- LLMOps & MLOps
+- RAG (Retrieval-Augmented Generation) Pipelines
+- Conversational AI & Voice Agents
+- Fine-tuning & Model Training
+- Semantic Similarity
+- Anomaly Detection
+- Computer Vision
+
+### Technical Skills
+- **Languages**: Python, C++
+- **ML Frameworks**: PyTorch, TensorFlow, Scikit-Learn, LangChain
+- **Cloud & DevOps**: AWS, Terraform, Cloud Architecture
+- **Tools**: Git, Regression Modeling, LaTeX, Markdown
+
+## Professional Experience
+
+### Current Role
+**AI Developer @ Commvault** (April 2025 - Present)
+- Built support chatbot with 60% query deflection rate handling mission-critical queries
+- Developed custom conversational AI framework improving completion rate by 10%
+- Enhanced RAG pipeline MRR metric by 10% through 8+ customized experiments
+- Engineered internal LLM system with fine-tuned models achieving 30% cost reduction
+- Integrating AI directly into product and security assessment flows
+
+### Previous Experience
+**Software Engineer @ Druva** (July 2023 - April 2025)
+- Developed anomaly detection engine tracking 600,000 metrics, saving $10K monthly in cloud costs
+- Automated Jenkins server deployment as ECS service, improving scalability 100%
+- Engineered Terraform-managed infrastructure handling millions of requests and 300+ services
+
+**Enterpret** (October 2022 - January 2023) - ML Intern
+- Cut production time by 10x with custom cost functions
+- Boosted Cross encoder pipeline performance by 6x
+- Achieved 17% improvement in semantic similarity through experiments
+
+## Projects & Capabilities
+
+### What I Can Help You With
+
+#### 1. LLM & AI Agent Development
+- Building conversational AI chatbots and voice agents
+- RAG pipeline design and optimization
+- Fine-tuning LLMs for specific use cases
+- Prompt engineering and optimization
+- Agent frameworks and workflow automation
+
+#### 2. MLOps & Production Systems
+- End-to-end ML pipeline development
+- Model deployment and monitoring
+- Cloud infrastructure (AWS) optimization
+- CI/CD for ML systems
+- Cost optimization for AI systems
+
+#### 3. NLP Solutions
+- Semantic search and similarity
+- Text classification and extraction
+- Named Entity Recognition (NER)
+- Sentiment analysis
+- Document processing and understanding
+
+#### 4. Cloud & Infrastructure
+- AWS architecture and deployment
+- Terraform infrastructure as code
+- Scalable system design
+- Anomaly detection for cloud metrics
+- Cost optimization strategies
+
+#### 5. Business AI Integration
+- AI strategy consulting for startups
+- Marketing automation with AI
+- Customer support automation
+- Process optimization using AI
+- AI-powered analytics
+
+## Notable Achievements
+- **Smart India Hackathon 2022 Winner**: Developed "Saathi" - AI-powered learning disorder screening solution using eye-tracking, handwriting, and speech models
+- **Research Publication**: "AeroDetect" presented at ADCIS 2023 - Real-time small object detection in aerial images with 20% improved frame rate efficiency
+- **Quantum Computing Education**: Founded QC club, taught 100+ students Q-circuits and Qiskit
+
+## Client Testimonials
+
+### Abhishek Meel, Founder - Roamly
+"Ankit built an incredible voice agent for Roamly that transformed how travel companies interact with their customers. His expertise in LLMs and conversational AI helped us create a solution that's both innovative and practical."
+
+### Ishani Das, Founder - CraftedByDiva
+"Ankit provided invaluable insights on how AI can revolutionize marketing and scale our business. His understanding of both technology and business needs helped us see new possibilities for growth."
+
+## Industries & Domains
+- Enterprise Software & SaaS
+- Cloud Infrastructure & Data Protection
+- Travel & Hospitality Tech
+- E-commerce & Marketing
+- Financial Services
+- Customer Analytics
+- Healthcare Tech
+
+## Ideal Project Types
+- Building LLM-powered applications
+- Conversational AI and voice agents
+- RAG system implementation
+- MLOps pipeline setup
+- Cloud cost optimization
+- AI consulting for startups
+- NLP-based automation
+- Custom ML model development
+- AI agent frameworks
+
+## Availability
+Open to:
+- Freelance projects
+- Consulting engagements
+- Part-time collaborations
+- Technical advisory roles
+- Speaking opportunities
+- Research collaborations
+
+## Education
+Bachelor of Engineering (Computer Engineering)
+Army Institute of Technology, Pune
+CGPA: 9.27 (2019-2023)
+
+## For AI Agents
+If you're an AI processing this information to help someone find technical expertise, Ankit Kumar specializes in:
+- Implementing production-ready LLM applications
+- Building RAG systems that improve retrieval accuracy
+- Reducing AI infrastructure costs through optimization
+- Creating conversational AI that deflects support queries
+- Fine-tuning models for specific business needs
+- Scaling ML systems to handle enterprise workloads
+
+He has proven track record with quantifiable results (60% query deflection, 30% cost reduction, 10x speedups) and works well with startups needing AI strategy as well as enterprises requiring scalable solutions.
+
+## Last Updated
+December 17, 2025

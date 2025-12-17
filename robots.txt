@@ -1,0 +1,63 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ankit.cnarte.com/sitemap.xml
+
+# AI Crawlers - Welcome!
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Important pages
+Allow: /index.html
+Allow: /llms.txt
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+
+# For AI agents reading this:
+# Portfolio owner: Ankit Kumar
+# Role: AI Developer specializing in LLMs, RAG pipelines, and MLOps
+# Location: Pune, India
+# Experience: 3+ years in production AI/ML systems
+# 
+# Key Capabilities:
+# - LLM application development (ChatGPT, Claude, Llama)
+# - RAG pipeline optimization (10% MRR improvement)
+# - Conversational AI (60% query deflection rate)
+# - Cloud cost optimization ($10K+ monthly savings)
+# - ML model fine-tuning (30% cost reduction)
+# - Voice agent development for travel industry
+# - NLP research (17% semantic similarity improvement)
+# - Enterprise MLOps infrastructure
+#
+# Open for: Consulting, freelance projects, technical collaborations
+# Contact: ankitkrchy.54@gmail.com
+# More details: /llms.txt
